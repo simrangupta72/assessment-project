@@ -15,9 +15,9 @@
 
 
   <body>
-<button class="btn1" onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
-<button class="btn2">Login</button>
-<div class="g-signin2" data-onsuccess="onSignIn"></div>
+<button class="btn1" onclick="document.getElementById('id01').style.display='block'"><b>Sign Up</b></button><br>
+<button class="btn2" onclick="document.getElementById('id02').style.display='block'"><b>Login</b></button>
+
 <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
   <form class="modal-content" onSubmit="alert('You have been Registered Successfully');">
@@ -56,17 +56,50 @@
   </form>
 </div>
 
+
+
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="mainPage.html">
+    <div class="container">
+      <div id="formHeader"><h1>Login</h1>
+      <p>Please login to your account.</p></div>
+      <hr>
+
+
+      <label for="email"><b>Email</b></label>
+      <input type="email" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input id="txtPassword" type="password" placeholder="Enter Password" name="psw" required>
+
+      <h2 id="googleLogin"><center> OR </center> </h2>
+      <div class="g-signin2" data-onsuccess="onSignIn"></div>
+      <label>
+        <br>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+
+      <div class="clearfix">
+        <button type="submit" class="loginbtn">Login</button>
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+
+      </div>
+    </div>
+  </form>
+</div>
+
+
+
+
+
 <script>
 // Get the modal
 var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
 </script>
+
+
 <script>
     function Validate() {
         var password = document.getElementById("txtPassword").value;
@@ -78,6 +111,12 @@ window.onclick = function(event) {
         return true;
     }
 </script>
+
+<script>
+// Get the modal
+var modal1 = document.getElementById('id02');
+</script>
+
 
   </body>
 </html>

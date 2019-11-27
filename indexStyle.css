@@ -1,11 +1,11 @@
 body{
   background-image: url('back4.jpg');
-  background-size: cover;
+  background-size: auto;
   background-repeat: no-repeat;
   *{box-sizing: border-box;}
 }
 .btn1 {
-  background-color: black;
+  background-color: red;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -14,14 +14,13 @@ body{
   margin: 4px 2px;
   opacity: 0.6;
   transition: 0.3s;
-  margin-top: 240px;
-      margin-left: 500px;
+
       border-radius: 40px;
 }
 
 .btn1:hover {opacity: 1}
 .btn2 {
-  background-color: black;
+  background-color: red;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -30,8 +29,9 @@ body{
   margin: 4px 2px;
   opacity: 0.6;
   transition: 0.3s;
-  margin-top: 152px;
-  margin-left: 215px;
+  padding-left: 41px;
+      padding-right: 41px;
+      text-align: center;
   border-radius: 40px;
 }
 
@@ -68,13 +68,13 @@ input[type=text]:focus, input[type=password]:focus {
   background-color: #f1f1f1;
   font-size: 15px;
 }
-.signupbtn{
+.signupbtn, .loginbtn{
   padding: 14px 20px;
   background-color: #ff5c61;
   font-size: 15px;
 }
 /* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
+.cancelbtn, .signupbtn, .loginbtn {
   float: left;
   width: 50%;
   font-family: "Andalus";
@@ -83,6 +83,7 @@ input[type=text]:focus, input[type=password]:focus {
 /* Add padding to container elements */
 .container {
   padding: 16px;
+      width: 623px;
 }
 
 /* The Modal (background) */
@@ -118,7 +119,12 @@ div#formHeader{
 padding-bottom: 5px;
 padding-left: 10px;
 }
-div#id01{
+h2 #googleLogin{
+  font-family: "Andalus";
+  text-align: center;
+}
+
+div#id01, #id02{
   font-family: "Andalus";
 }
 /* Clear floats */
