@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body, html {
   height: 100%;
   margin: 0;
@@ -259,3 +260,269 @@ text-decoration: underline;
     #myBtn:hover {
       background-color: #555;
     }
+=======
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+.bgimg-1 {
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("back6.jpeg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("hanger2.jpg");
+  min-height: 400px;
+
+}
+
+.bgimg-3 {
+  background-image: url("back9.jpg");
+  min-height: 400px;
+}
+
+.caption3 {
+  position: absolute;
+  left: 0;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+  color: black;
+}
+.caption3 span.border {
+  background-color: #111;
+  color: white;
+  padding: 15px;
+  text-shadow: 5px 5px 10px black;
+  font-family: "Edwardian Script ITC";
+}
+
+.caption2 {
+  position: absolute;
+  left: 0;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  color: black;
+}
+.caption2 span.border {
+  background-color: #111;
+  color: white;
+  padding: 18px;
+
+  font-family: "Edwardian Script ITC";
+  text-shadow: 5px 5px 10px black;
+}
+
+.caption1 {
+  position: inherit;
+/* left: -114px; */
+/* top: 10%; */
+width: 100%;
+text-align: left;
+color: #000;
+margin-left: 30px;
+}
+
+.caption1 span.border1 {
+  color: #fff;
+  padding: 12px;
+  font-size: 100px;
+  font-family: "Edwardian Script ITC";
+  padding-top: 0;
+  padding-left: 0;
+}
+div#tagline{
+  color: white;
+  font-family: "Agency FB";
+  font-size: 35px;
+}
+div#intro{
+  width: 600px;
+  color:white;
+  font-size:20px;
+  font-family:"Andalus";
+  letter-spacing: 1px"
+}
+h3.toleft, .expect{
+  text-transform: uppercase;
+    font-size: 20px;
+    font-family: "Andalus";
+    font-weight: 500;
+    line-height: 1.3;
+    width: 500px;
+    color:#000930;;
+}
+p.step1, .expectC{
+  font-size: 17px;
+  font-family: "Ebrima";
+  width: 500px;
+}
+h3.toright {
+  text-transform: uppercase;
+    font-size: 20px;
+    font-family: "Andalus";
+    font-weight: 500;
+    line-height: 1.3;
+    color:#000930;;
+    width: 500px;
+    float: right;
+}
+
+p.step2{
+  margin-top: 0;
+  font-size: 17px;
+  font-family: "Ebrima";
+float:right;
+  width: 500px;
+}
+div #divAlign4,#divAlign3,#divAlign2,#divAlign1{
+  width: 50%;
+  flex: 1;
+}
+div #divAlign5{
+  width: 30%;
+  flex:1;
+}
+.lDiv{
+  text-align:center;
+  color:#000930;
+  font-size: 20px;
+  font-family: "Andalus";
+}
+.lDivC{
+  font-size: 17px;
+  font-family: "Ebrima";
+  text-align: center;
+  color:#000930;
+}
+#footer{
+  position: absolute;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     background-color: black;
+     color: white;
+     text-align: center;
+     height: 225px;
+     font-size: 17px;
+     font-family: "Ebrima";
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+table{
+  background-color: transparent;
+  height: 50px;
+  position: fixed;
+  top: 0;
+    margin-right: 15px;
+        z-index: 1;
+        width: 100%;
+}
+td{
+  width: 200px;
+  border-left: 2px solid white;
+}
+table ,td{
+  text-align: center;
+  font-family: "Maiandra GD";
+}
+a#linking:link {
+color: white;
+background-color: transparent;
+text-decoration: none;
+}
+a#linking:visited {
+color: white;
+background-color: transparent;
+text-decoration: none;
+}
+a#linking:hover {
+color: white;
+background-color: transparent;
+text-decoration: underline;
+}
+a#linking:active {
+color: white;
+background-color: transparent;
+text-decoration: underline;
+}
+#map{
+      height:385px;
+      width:100%;
+    }
+    #myBtn {
+
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: pink;
+      color: black;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+      transform: rotate(-20deg);
+      box-shadow: 5px 10px;
+
+    }
+
+    #myBtn:hover {
+      background-color: #555;
+    }
+>>>>>>> 1st draft completed
