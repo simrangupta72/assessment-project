@@ -2,6 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="mainPageStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Styleen</title>
@@ -9,9 +11,7 @@
   <body>
     <table align="right">
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
+
       <td><a href="#Home"><b>HOME</b></a></td>
       <td><a href="#HowItWorks"><b>HOW IT WORKS</b></a></td>
       <td><a href="#WhatToExpect"><b>WHAT TO EXPECT</b></a></td>
@@ -19,6 +19,7 @@
       <td><a href="#Contact"><b>CONTACT</b></a></td>
     </tr>
     </table>
+    <a name="Home"></a>
     <div class="bgimg-1">
       <div class="caption1">
         <br>
@@ -37,8 +38,8 @@
           </div>
       </div>
     </div>
-
-    <div style="color: white;background-color:#000930;text-align:center;padding:50px 50px;text-align: justify;">
+<a name="HowItWorks"></a>
+    <div style="color: #000930;background-color:antiquewhite;text-align:center;padding:50px 50px;text-align: justify;">
 
 <div style="display:flex">
 
@@ -82,6 +83,7 @@
 </div>
 
 </div>
+<a name="WhatToExpect"></a>
     <div class="bgimg-2">
       <div class="caption2">
       <span class="border" style="background-color:transparent;font-size:55px;"><b>WHAT TO EXPECT</b></span>
@@ -103,6 +105,7 @@
       <h3 class="expect" style="text-align:center; color: #f39520">STYLE TIP</h3>
       <p class="expectC" style="text-align:center">A note from your stylist with tips & advice on how to best style your personalized pieces</p>
 </div>
+
 <div id=divAlign2>
 <img src="divpic.jpg" style="padding-top: 23px; float:right; border-radius: 10%;">
 
@@ -110,7 +113,7 @@
 </div>
       </div>
     </div>
-
+<a name="Pricing"></a>
     <div class="bgimg-3">
       <div class="caption3">
       <span class="border" style="background-color:transparent;font-size:55px;"><b>YOU CAN'T PUT A PRICE ON THE FUN YOU'LL HAVE
@@ -118,7 +121,7 @@ OPENING YOUR BOX</b></span>
       </div>
     </div>
     <div style="position:relative;">
-      <div style="color:white;background-color:#000930;text-align:center;padding:50px 50px;text-align: justify;">
+      <div style="background-color:antiquewhite;text-align:center;padding:50px 50px;text-align: justify;">
       <div style="display:flex">
         <div id="divAlign5">
           <h3 class="lDiv">FIX STYLING FEE</h3>
@@ -140,9 +143,10 @@ No other hidden fees- we guarantee.</p>
       </div>
       </div>
     </div>
-
+<a name="Contact"></a>
     <div class="bgimg-1">
       <div class="caption">
+        <div id="map"></div>
         <div id="footer">
           <br>
           <a href="#" class="fa fa-facebook"></a>
@@ -157,6 +161,70 @@ No other hidden fees- we guarantee.</p>
         </div>
       </div>
     </div>
+
+
+    <script>
+        function initMap(){
+          // Map options
+          var options = {
+            zoom:8,
+            center:{lat:30.3098,lng:76.3174}
+          }
+
+          // New map
+          var map = new google.maps.Map(document.getElementById('map'), options);
+
+          // Listen for click on map
+          google.maps.event.addListener(map, 'click', function(event){
+            // Add marker
+            addMarker({coords:event.latLng});
+          });
+
+
+          var markers = [
+
+            {
+              coords:{lat:30.7333,lng:76.7794},
+              content:'<h1>goyal</h1>'
+            }
+          ];
+
+          for(var i = 0;i < markers.length;i++){
+            // Add marker
+            addMarker(markers[i]);
+          }
+
+          // Add Marker Function
+          function addMarker(props){
+            var marker = new google.maps.Marker({
+              position:props.coords,
+              map:map,
+              //icon:props.iconImage
+            });
+
+            // Check for customicon
+            if(props.iconImage){
+              // Set icon image
+              marker.setIcon(props.iconImage);
+            }
+
+            // Check content
+            if(props.content){
+              var infoWindow = new google.maps.InfoWindow({
+                content:props.content
+              });
+
+              marker.addListener('click', function(){
+                infoWindow.open(map, marker);
+              });
+            }
+          }
+        }
+      </script>
+      <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDT-0FLpw-7hornyLDgivo_s_vlQhWwbEA&callback=initMap">
+        </script>
+
 
 
   </body>
