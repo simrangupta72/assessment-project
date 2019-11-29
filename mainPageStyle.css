@@ -40,7 +40,7 @@ body, html {
 .caption3 {
   position: absolute;
   left: 0;
-  top: 25%;
+  top: 20%;
   width: 100%;
   text-align: center;
   color: black;
@@ -48,15 +48,15 @@ body, html {
 .caption3 span.border {
   background-color: #111;
   color: white;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 5px;
+  padding: 15px;
+  text-shadow: 5px 5px 10px black;
+  font-family: "Edwardian Script ITC";
 }
 
 .caption2 {
   position: absolute;
   left: 0;
-  top: 35%;
+  top: 25%;
   width: 100%;
   text-align: center;
   color: black;
@@ -65,8 +65,9 @@ body, html {
   background-color: #111;
   color: white;
   padding: 18px;
-  font-size: 25px;
-  letter-spacing: 5px;
+
+  font-family: "Edwardian Script ITC";
+  text-shadow: 5px 5px 10px black;
 }
 
 .caption1 {
@@ -160,7 +161,8 @@ div #divAlign5{
      color: white;
      text-align: center;
      height: 225px;
-
+     font-size: 17px;
+     font-family: "Ebrima";
 }
 .fa {
   padding: 20px;
@@ -215,22 +217,22 @@ table ,td{
   text-align: center;
   font-family: "Maiandra GD";
 }
-a:link {
+a#linking:link {
 color: white;
 background-color: transparent;
 text-decoration: none;
 }
-a:visited {
+a#linking:visited {
 color: white;
 background-color: transparent;
 text-decoration: none;
 }
-a:hover {
+a#linking:hover {
 color: white;
 background-color: transparent;
 text-decoration: underline;
 }
-a:active {
+a#linking:active {
 color: white;
 background-color: transparent;
 text-decoration: underline;
