@@ -119,7 +119,10 @@ var modal1 = document.getElementById('id02');
 </script>
 <script>
 function onSignIn(googleUser){
-  location.replace("mainPage.html");
+  console.log('signed in');
+  var profile=googleUser.getBasicProfile();
+  console.log('profile info: ',profile);
+  window.location.replace("mainPage.html");
 }
 
 function signOut{
