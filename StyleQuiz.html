@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="StyleQuiz.css">
+    <title>Style Quiz</title>
+  </head>
+  <body>
+    <div class="text-block">
+   <h1>Your Style Profile</h1>
+   <hr style="border: 1px dashed #ff5c61;">
+   <hr style="border: 1px dashed #ff5c61;"><br>
+   <form class="StyleProfile" action="mainPage.html" method="post">
+     <label for="dob"><b>Date Of Birth </b></label><br>
+     <input class="inputs" type="date" name="dob" required><hr>
+
+     <label for="weight"><b>Weight </b></label><br>
+     <input class="inputs" type="text" placeholder="In Kgs" name="weight" required><hr>
+
+     <label for="top-size"><b>Top Size - Western Cothing </b></label><br>
+     <input class="inputs" type="text" placeholder="XS-XXL" name="top-size" required><hr>
+
+     <label for="size"><b>As Per UK/AU size, I Fall Into </b></label><br>
+     <input class="inputs" type="number" placeholder="6-24" name="size" min="6" max="24" step="2" required><hr>
+
+     <label for="waist-size"><b>Waist Size </b></label><br>
+     <input class="inputs" type="number" placeholder="24-36" name="waist-size" min="24" max="36" step="2" required><hr>
+
+     <label for="height"><b>Height </b></label><br>
+     <input class="inputs" type="text" placeholder="In feets and inches" name="height" required><hr>
+
+     <label for="profession"><b>Profession </b></label><br>
+     <select name="profession">
+       <option value="Student">Student</option>
+       <option value="Homemaker">Homemaker</option>
+       <option value="Fashion">Fashion</option>
+       <option value="Retail">Retail</option>
+       <option value="PR/Advertising">PR/Advertising</option>
+       <option value="Finance">Finance</option>
+       <option value="Engineering">Engineering</option>
+       <option value="Law">Law</option>
+       <option value="Others">Others</option>
+     </select><hr>
+
+     <label for="length"><b>What length do you prefer for your bottoms?</b></label><br><br>
+     <input type="checkbox" name="length" > Very Short<br>
+     <input type="checkbox" name="length" >Mid Thigh<br>
+     <input type="checkbox" name="length" >Little Above Knee<br>
+     <input type="checkbox" name="length" >Knee Length<br>
+     <input type="checkbox" name="length" > A Little Below Knee<br>
+     <input type="checkbox" name="length" >Midi Length<br>
+     <input type="checkbox" name="length">Full Length<br>
+     <hr>
+
+     <label for="comfy"><b>What are you comfortable wearing?</b></label><br><br>
+     <input type="checkbox" name="comfy" >Sleeveless<br>
+     <input type="checkbox" name="comfy" >Backless<br>
+     <input type="checkbox" name="comfy" >Crop Top<br>
+     <input type="checkbox" name="comfy" >Strappy<br>
+     <input type="checkbox" name="comfy" >Off Shoulder<br>
+     <input type="checkbox" name="comfy" >Halter Neck<br>
+     <input type="checkbox" name="comfy">Cut Outs<br>
+     <input type="checkbox" name="comfy">Deep Neck<br>
+     <input type="checkbox" name="comfy">Tube Top<br>
+     <input type="checkbox" name="comfy">One Shoulder<br>
+     <hr>
+
+     <label for="jewellery"><b>How would you characterize your accessory and jewelry style?</b></label><br>
+     <select name="jewellery">
+       <option value="Statement">Statement</option>
+       <option value="Minimal">Minimal</option>
+       <option value="Bold">Bold</option>
+       <option value="Bohemian">Bohemian</option>
+       <option value="Anything">Anything is cool</option>
+     </select><hr>
+
+     <label for="bags"><b>How would you characterize your accessory and jewelry style?</b></label><br>
+     <select name="bags">
+       <option value="Back Pack">Back Pack</option>
+       <option value="Clutch">Clutch</option>
+       <option value="Hand Bag">Hand Bag</option>
+       <option value="Sling Bag">Sling Bag</option>
+       <option value="Tote Bag">Tote Bag</option>
+     </select><hr>
+<br>
+<button type="submit" class="submit1"">Submit</button>
+
+   </form>
+ </div>
+  </body>
+</html>

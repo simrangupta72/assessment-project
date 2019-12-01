@@ -1,0 +1,44 @@
+body{
+  background-image: url('wallpaper5.jpg');
+background-size: auto;
+}
+.text-block {
+  background-color: black;
+  opacity: 0.90;
+  color: white;
+  padding: 20px;
+  margin: auto;
+  width: 60%;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.inputs,select {
+  width: 70%;
+  padding-left: 5px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 3px solid #ff5c61;
+  font-family: "Andalus";
+  font-size: 17px;
+}
+.StyleProfile{
+  text-align: center;
+}
+.submit1{
+  padding: 5px 5px;
+  background-color: #ff5c61;
+  font-size: 25px;
+  width: 50%;
+  font-family: "Andalus";
+  color: black;
+}
+h1{
+  font-family: "Andalus";
+  color: #ff5c61;
+}
+label{
+  font-family: "Andalus";
+  font-size: 20px;
+  color: #ff5c61;
+}

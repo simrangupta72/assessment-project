@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="mainPageStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Styleen</title>
   </head>
   <body>
@@ -17,6 +18,7 @@
       <td><a id="linking" href="#WhatToExpect"><b>WHAT TO EXPECT</b></a></td>
       <td><a id="linking" href="#Pricing"><b>PRICING</b></a></td>
       <td><a id="linking" href="#Contact"><b>CONTACT</b></a></td>
+      <td><a id="linking" href="index.html" style="color: #cb2027;"><b>SIGN OUT</b></a></td>
     </tr>
     </table>
     <a name="Home"></a>
@@ -158,7 +160,6 @@ No other hidden fees- we guarantee.</p>
           Email Us At: <a id="linking" href="mailto:styleen@gmail.com">Styleen@gmail.com</a><br>
           For More Information About Me Visit: <a id="linking" href="https://simrangupta72.github.io/Project2/">Resume</a>
           <button id="myBtn" onclick="window.location.href = '#Home';">Top</button>
-          <button onclick="signOut()" class="btn btn-danger">Sign Out</button>
         </div>
       </div>
     </div>
@@ -226,15 +227,6 @@ No other hidden fees- we guarantee.</p>
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDT-0FLpw-7hornyLDgivo_s_vlQhWwbEA&callback=initMap">
         </script>
 
-<script>
-function signOut(){
-  var auth2=gapi.auth2.getAuthInstance();
-  auth2.signOut().then(function(){
-    window.location.replace("index.html");
-    alert("You have been Successfully Logged Out");
-  });
-  }
-  </script>
 
   </body>
 </html>
