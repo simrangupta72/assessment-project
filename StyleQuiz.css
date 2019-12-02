@@ -3,7 +3,7 @@ body{
 background-size: auto;
 }
 .text-block {
-  background-color: black;
+  background-color: white;
   opacity: 0.90;
   color: white;
   padding: 20px;
@@ -21,6 +21,10 @@ background-size: auto;
   border-bottom: 3px solid #ff5c61;
   font-family: "Andalus";
   font-size: 17px;
+}
+.container{
+  color: black;
+  font-size: 18px;
 }
 .StyleProfile{
   text-align: center;
