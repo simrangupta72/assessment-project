@@ -115,16 +115,7 @@
 </div>
       </div>
     </div>
-
-
-    <div id="ootd">
-
-
-
-
-
-
-    </div>
+    
 <a name="Pricing"></a>
     <div class="bgimg-3">
       <div class="caption3">
@@ -175,18 +166,44 @@ No other hidden fees- we guarantee.</p>
       </div>
     </div>
 
+<script>
+    function initMap(){
+         // Map options
+         var options = {
+           zoom:8,
+           center:{lat:30.7333,lng:76.7794}
+         }
+         // New map
+         var map = new google.maps.Map(document.getElementById('map'), options);
+         var markers = [
+           {
+             coords:{lat:30.7333,lng:76.7794},
+             content:'<h1>goyal</h1>'
+           }
+         ];
 
-    <script>
-          var map;
-          function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-              center: {lat:30.7333,lng:76.7794},
-              zoom: 8
-            });
-          }
-        </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDT-0FLpw-7hornyLDgivo_s_vlQhWwbEA&callback=initMap"
-        async defer></script>
-
+         for(var i = 0;i < markers.length;i++){
+           // Add marker
+           addMarker(markers[i]);
+         }
+         // Add Marker Function
+         function addMarker(props){
+           var marker = new google.maps.Marker({
+             position:props.coords,
+             map:map,
+             //icon:props.iconImage
+           });
+         // Check content
+           if(props.content){
+             var infoWindow = new google.maps.InfoWindow({
+               content:props.content
+             });
+           }
+         }
+       }
+</script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDT-0FLpw-7hornyLDgivo_s_vlQhWwbEA&callback=initMap">
+    </script>
   </body>
 </html>
